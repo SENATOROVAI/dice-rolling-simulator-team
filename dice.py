@@ -6,4 +6,4 @@ import random
 def roll_dice(num_sides):
     # Бросаем кубик и возвращаем результат
     #ВЕРНУТЬ!!! random.метод возвращает целое число выбранного элемента из указанного диапазона(1, принимаем переменную из другого файла)
-    random.randrange(1, num_sides)
+   return random.randrange(1, num_sides)
