@@ -1,21 +1,12 @@
-# **main.py**: Он будет запускаться и запрашивать информацию от пользователя.
+from dice import roll_dice
 
-# ? dice
-
-? True:
-    # Ввод числа граней кубика
-    num_sides
-
-    # Валидация введенного числа
-    if not num_s+метод проверки на число():
-        print(?)
-#         продолжи
-
-    # Обращение к функции roll_dice и вывод результата
-#     roll_result = dice.... :)
+while True:
+    num_sides = (input('Введите число: '))
+    if not num_sides.isdigit():
+        print("Ошибка вы ввели не число!!!")
+        continue
+    roll_result = roll_dice(num_sides=6)
     print("You rolled a " + str(roll_result) + "!")
-
-    # Проверка на продолжение игры
     play_again = input("Roll again? (y/n): ")
-    if ввод в нижнем регистре != "y":
-#         перерыв
+    if play_again.lower() != "y":
+        break
